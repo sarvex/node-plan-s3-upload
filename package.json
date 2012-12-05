@@ -1,6 +1,6 @@
 {
   "name": "plan-s3-upload",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "plan plugin for uploading local files to s3",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "mocha": "~1.7.3"
   },
   "dependencies": {
-    "s3": "0.0.4"
+    "s3": "0.0.4",
+    "node-uuid": "~1.4.0"
   }
 }
