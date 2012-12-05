@@ -1,5 +1,6 @@
-See [node-plan](https://github.com/superjoe30/node-plan)
-See also [node-plan-s3-retrieve](https://github.com/superjoe30/node-plan-s3-retrieve)
+See [node-plan](https://github.com/superjoe30/node-plan).
+
+See also [node-plan-s3-download](https://github.com/superjoe30/node-plan-s3-download).
 
 ### input
 
