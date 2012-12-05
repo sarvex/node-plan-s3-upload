@@ -1,0 +1,22 @@
+{
+  "name": "plan-s3-upload",
+  "version": "0.0.1",
+  "description": "plan plugin for uploading local files to s3",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superjoe30/node-plan-s3-upload"
+  },
+  "author": "Andrew Kelley",
+  "license": "BSD",
+  "devDependencies": {
+    "plan": "0.0.1",
+    "mocha": "~1.7.3"
+  },
+  "dependencies": {
+    "s3": "0.0.4"
+  }
+}
