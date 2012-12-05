@@ -23,7 +23,7 @@ module.exports = {
     });
     self.exports.bucket = self.options.s3Bucket;
 
-    // consume the callback url
+    // consume the temp path
     var tempPath = self.context.tempPath;
     delete self.context.tempPath;
 
