@@ -16,11 +16,15 @@ none
   * `s3Secret`
   * `s3Bucket`
   * `url` - string file path destination. These interpolations are available:
-    * `$ext` - the extension of `tempPath` from the input. includes the '.'.
-    * `$uuid` - a newly generated UUID string. looks something like this: 064c06bf-84e8-4a54-b0d2-d7acdefe20d2
-    * `$$` - a literal '$'
+    * `{ext}` - the extension of `tempPath` from the input. includes the '.'.
+    * `{uuid}` - a newly generated UUID string. looks something like this: 064c06bf-84e8-4a54-b0d2-d7acdefe20d2
+    * `{brace}` - a literal '{'
 
 ### exports
 
   * `bucket` - copied directly from options
   * `url` - rendered url after applying interpolations
+
+## Testing
+
+`S3_KEY=<valid_s3_key> S3_SECRET=<valid_s3_secret> S3_BUCKET=<valid_s3_bucket> npm test`
