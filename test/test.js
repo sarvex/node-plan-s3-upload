@@ -24,6 +24,7 @@ describe("s3-upload", function() {
           if (err) return done(err);
           assert.ok(/^\/[a-f0-9\-]{36}\/\{\}\/\{ext\/blah\.foo$/.test(task.exports.url),
             "unexpected url: " + task.exports.url);
+          assert.strictEqual(task.exports.bucket, process.env.S3_BUCKET);
           done();
         });
       });
