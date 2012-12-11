@@ -15,6 +15,10 @@ function applyInterpolations(string, interps) {
 module.exports = {
   start: function(done) {
     var self = this;
+    if (! self.options.url) {
+      done(new Error("options.url is required"));
+      return;
+    }
     var config = {
       key: self.options.s3Key,
       secret: self.options.s3Secret,
