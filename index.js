@@ -6,7 +6,7 @@ function applyInterpolations(string, interps) {
   return string.replace(/\{([^{}]*)\}/g,
     function (match, name) {
       var value = interps[name];
-      if (! value) throw new Error("unrecognized interpolation: " + name);
+      if (value == null) throw new Error("unrecognized interpolation: " + name);
       return value;
     }
   );
