@@ -19,6 +19,8 @@ none
     * `{ext}` - the extension of `tempPath` from the input. includes the '.'.
     * `{uuid}` - a newly generated UUID string. looks something like this: 064c06bf-84e8-4a54-b0d2-d7acdefe20d2
     * `{brace}` - a literal '{'
+  * `secure` - boolean, whether to use SSL. Note that you cannot use SSL if
+    your bucket contains a period. Defaults to `false`.
 
 ### exports
 
