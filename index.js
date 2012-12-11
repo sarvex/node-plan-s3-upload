@@ -37,6 +37,11 @@ module.exports = {
     var tempPath = self.context.tempPath;
     delete self.context.tempPath;
 
+    if (! tempPath) {
+      done(new Error("context.tempPath is required"));
+      return
+    }
+
     var interps = {
       ext: path.extname(tempPath),
       uuid: makeUuid(),
