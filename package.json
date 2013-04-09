@@ -1,6 +1,6 @@
 {
   "name": "plan-s3-upload",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "plan plugin for uploading local files to s3",
   "main": "index.js",
   "scripts": {
