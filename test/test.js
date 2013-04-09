@@ -43,14 +43,16 @@ describe("s3-upload", function() {
       });
       var plan = new Plan();
       plan.addTask(task);
+      var hadError = false;
       plan.on('error', function(err){
+        hadError = true;
         fs.unlink(tmpFilePath, function(err) {
           if (err) return done(err);
-          done();
         });
       });
       plan.on('end', function() {
-        done(new Error("should emit error when s3 key is omitted"));
+        assert.ok(hadError);
+        done();
       });
       plan.start({
         tempPath: tmpFilePath,

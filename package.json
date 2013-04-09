@@ -4,7 +4,7 @@
   "description": "plan plugin for uploading local files to s3",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec test/test.js"
   },
   "repository": {
     "type": "git",
@@ -13,11 +13,11 @@
   "author": "Andrew Kelley",
   "license": "BSD",
   "devDependencies": {
-    "plan": "0.0.1",
-    "mocha": "~1.7.3"
+    "plan": "~0.1.4",
+    "mocha": "~1.9.0"
   },
   "dependencies": {
-    "s3": "0.0.5",
+    "s3": "~0.1.0",
     "node-uuid": "~1.4.0"
   }
 }
